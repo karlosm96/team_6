@@ -5,7 +5,7 @@ def find_char(string):
     new_string = string.lower().replace(' ', '')
     
     
-    for i in set(new_string):
+    for i in (new_string):
         leters[i] = new_string.count(i)
     
     leters = sorted(leters.items(), key=lambda x: x[1], reverse = True)
