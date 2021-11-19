@@ -1,4 +1,4 @@
-
+### encontrar caracteres ###
 def find_char(string):
     leters = {}
     

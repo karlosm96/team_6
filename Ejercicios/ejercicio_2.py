@@ -1,3 +1,4 @@
+### cambia letras minusculas por mayusculas y viceversa ###
 def cap_letter(string):
     swap_string = string.swapcase()
     print(swap_string)

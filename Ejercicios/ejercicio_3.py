@@ -1,3 +1,4 @@
+### cambia una character a partir de un indice ###
 def my_function(string, indice_1, char):
     init = indice_1
     

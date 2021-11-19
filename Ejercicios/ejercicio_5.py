@@ -1,3 +1,4 @@
+### Buscar subcampeon ###
 def sup_champion(my_list):
     points_list = my_list
     points_list.sort(reverse = True)
