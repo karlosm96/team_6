@@ -1,3 +1,5 @@
+import numpy as np
+
 class complex_numbers():
     
     def __init__(self, part_r, part_i):
