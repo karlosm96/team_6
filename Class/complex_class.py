@@ -10,22 +10,21 @@ class complex_numbers():
         print("### Complex number--- Sum")
         print(self.part_r + number2.part_r, self.part_i + number2.part_i)
     
-    def __sub__(self, number):
+    def __sub__(self, number2):
         print("### Complex numbers--- Diference ###")
         print(self.part_r - number2.part_r, self.part_i - number2.part_i)
     
-    def __mul__(self, number):
+    def __mul__(self, number2):
         print("### Complex number--- Multiplication ###")
-        print(self.part_r * number2.part_r, self.part_i * number2.part_i)
+        print((self.part_r * number2.part_r) + (self.part_i * number2.part_i) + (self.part_r * number2.part_i) + (self.part_i * number2.part_r))
     
-    def __truediv__(self, number):
-        print("### Complex number--- Multiplication ###")
-        print(self.part_r / number2.part_r, self.part_i / number2.part_i)    
+    def __truediv__(self, number2):
+        print("### Complex number--- Division ###")
+        print((self.part_r * number2.part_r) - (self.part_i * number2.part_i) - (self.part_r * number2.part_i) + (self.part_i * number2.part_r))     
     
 number = complex_numbers(1, 5j)
 number2 = complex_numbers(2, 3j)
 
-complex_numbers.add = number + number2
-complex_numbers.sub = number - number2
-complex_numbers.mul = number * number2
-complex_numbers.pow = number / number2
+sum_complex = number.__add__(number2)
+res_complex = number.__sub__(number2)
+mul_complex = number.__mul__(number2)
