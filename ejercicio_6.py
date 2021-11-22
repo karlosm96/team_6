@@ -23,7 +23,3 @@ class NumeroComplejo(object):
     # Metodo para dividir un numero complejo
     def division(self, numeroComplejo):
         return ((self.parteReal * numeroComplejo.parteReal) + (self.parteImaginario * numeroComplejo.parteImaginario)) / ((numeroComplejo.parteReal * numeroComplejo.parteReal) + (numeroComplejo.parteImaginario * numeroComplejo.parteImaginario)), ((self.parteImaginario * numeroComplejo.parteReal) - (self.parteReal * numeroComplejo.parteImaginario)) / ((numeroComplejo.parteReal * numeroComplejo.parteReal) + (numeroComplejo.parteImaginario * numeroComplejo.parteImaginario))
-
-    # Metodo para mostrar el numero complejo
-    def mostrar(self):
-        return self.parteReal, self.parteImaginario
