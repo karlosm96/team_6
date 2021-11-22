@@ -8,11 +8,11 @@ class complex_numbers():
     
     def __add__(self, number2):
         print("### Complex number--- Sum")
-        print(self.part_r + number2.part_r, self.part_i + number2.part_i)
+        print(self.part_r + number2.part_r + self.part_i + number2.part_i)
     
     def __sub__(self, number2):
         print("### Complex numbers--- Diference ###")
-        print(self.part_r - number2.part_r, self.part_i - number2.part_i)
+        print(self.part_r - number2.part_r + self.part_i - number2.part_i)
     
     def __mul__(self, number2):
         print("### Complex number--- Multiplication ###")
