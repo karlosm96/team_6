@@ -24,10 +24,10 @@ class complex_numbers():
         self.deno_real = np.real(number2.part_r**2 - number2.part_i**2)
         print((self.nume_real / self.deno_real) + ((self.part_i * number2.part_r) - (self.part_r * number2.part_i)))
     
-number = complex_numbers(1, 5j)
-number2 = complex_numbers(2, 3j)
+###number = complex_numbers(1, 5j)
+###number2 = complex_numbers(2, 3j)
 
-sum_complex = number.__add__(number2)
-res_complex = number.__sub__(number2)
-mul_complex = number.__mul__(number2)
-div_complex = number.__truediv__(number2)
+###sum_complex = number.__add__(number2)
+###res_complex = number.__sub__(number2)
+###mul_complex = number.__mul__(number2)
+###div_complex = number.__truediv__(number2)
