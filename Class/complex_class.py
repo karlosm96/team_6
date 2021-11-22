@@ -21,6 +21,8 @@ class complex_numbers():
     def __truediv__(self, number2):
         print("### Complex number--- Division ###")
         print((self.part_r * number2.part_r) - (self.part_i * number2.part_i) - (self.part_r * number2.part_i) + (self.part_i * number2.part_r))     
+        
+        print(number2.part_r**2 - number2.part_i**2)
     
 number = complex_numbers(1, 5j)
 number2 = complex_numbers(2, 3j)
