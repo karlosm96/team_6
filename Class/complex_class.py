@@ -20,9 +20,9 @@ class complex_numbers():
     
     def __truediv__(self, number2):
         print("### Complex number--- Division ###")
-        self.total_real = (np.real((self.part_r * number2.part_r) - (self.part_i * number2.part_i)))
-        self.denomi_real = np.real(number2.part_r**2 - number2.part_i**2)
-        print((self.total_real / self.denomi_real) + ((self.part_i * number2.part_r) - (self.part_r * number2.part_i)))
+        self.nume_real = (np.real((self.part_r * number2.part_r) - (self.part_i * number2.part_i)))
+        self.deno_real = np.real(number2.part_r**2 - number2.part_i**2)
+        print((self.nume_real / self.deno_real) + ((self.part_i * number2.part_r) - (self.part_r * number2.part_i)))
     
 number = complex_numbers(1, 5j)
 number2 = complex_numbers(2, 3j)
